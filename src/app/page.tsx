@@ -9,7 +9,7 @@ export default function Home() {
           <p className="flex justify-center text-white font-semibold text-2xl">Banese</p>
           <div className="text-white font-light flex flex-col justify-center items-center pt-5">
             <p className="text-[22px]">RCU</p>
-            <p className="text-[16px]">REUNIÃO E CRIAÇÃO US</p>
+            <p className="text-[16px]">REUNIÃO E CRIAÇÃO AAAUS</p>
           </div>
           <div className="flex flex-col p-6 gap-6">
             <div className="flex flex-col gap-6 justify-between h-full">
