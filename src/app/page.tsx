@@ -23,14 +23,14 @@ export default function Home( {outletContent} : HomeProps) {
               <div>
                 <p 
                   className="bg-[#00694e] text-[#133601] p-3 rounded-md flex my-3 cursor-pointer gap-2"
-                  onClick={() => router.push('/criar')}  
+                  onClick={() => router.push('/nova-reuniao')}  
                 >
                   <Plus  className="text-white"/>
                   <span className="text-white">Nova Reunião</span>
                 </p>
                 <p 
                   className="bg-[#00694e] text-[#133601] p-3 rounded-md flex my-3 cursor-pointer gap-2"
-                  onClick={() => console.log('a')}  
+                  onClick={() => router.push('/upload-reuniao')}
                 >
                   <Upload className="text-white"/>
                   <span className="text-white">Upload de Reunião</span>
@@ -38,7 +38,7 @@ export default function Home( {outletContent} : HomeProps) {
                   
                 <p 
                   className="bg-[#00694e] text-[#133601] p-3 rounded-md flex my-3 cursor-pointer gap-2"
-                  onClick={() => console.log('a')}
+                  onClick={() => router.push('/agendar-reuniao')}
                 >
                   <Calendar className="text-white"/>
                   <span className="text-white">Agendar Reunião</span>
@@ -48,14 +48,14 @@ export default function Home( {outletContent} : HomeProps) {
               <div>
                 <span 
                   className="bg-[#00694e] text-[#133601] p-3 rounded-md flex my-3 cursor-pointer gap-2"
-                  onClick={() => console.log('a')}
+                  onClick={() => router.push('/historico-reuniao')}
                 >
                   <Clock className="text-white"/>
                   <p className="text-white">Histórico de Reunião</p>
                 </span>
                 <p 
                   className="bg-[#00694e] text-[#133601] p-3 rounded-md flex my-3 cursor-pointer gap-2"
-                  onClick={() => console.log('a')}  
+                  onClick={() => router.push('/configuracoes')} 
                 >
                   <Settings className="text-white"/>
                   <span className="text-white">Configurações</span>
@@ -66,7 +66,7 @@ export default function Home( {outletContent} : HomeProps) {
           </div>
         </div>
      
-        <div className="mx-auto max-w-full overflow-x-hidden whitespace-no-wrap">
+        <div className="w-full overflow-x-hidden whitespace-no-wrap">
             {outletContent}
         </div>
 
