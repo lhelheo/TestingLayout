@@ -11,7 +11,7 @@ export default function Home( {outletContent} : HomeProps) {
   const router = useRouter()
   return (
     <div className="grid grid-cols-6">
-      <div>
+      <div className="1">
         <div className="shadow-2xl h-screen p-4">
           <p className="flex justify-center text-[#00694e] font-semibold text-2xl">Banese</p>
           <div className="text-white font-light flex flex-col justify-center items-center pt-5">
@@ -56,11 +56,12 @@ export default function Home( {outletContent} : HomeProps) {
           </div>
         </div>
      
-        <div className="w-full overflow-x-hidden whitespace-no-wrap">
-            {outletContent}
-        </div>
+        
 
       </div>
+      <div className="w-full overflow-x-hidden whitespace-no-wrap">
+            {outletContent}
+        </div>
     </div>
   );
 }
